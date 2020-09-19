@@ -8,7 +8,7 @@ RUN apt-get update -y && \
     curl -s https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | bash && \
     apt-get update -y && \
     apt-get upgrade -y && \
-    apt-get install -y gitlab-ci-multi-runner && \
+    apt-get install -y gitlab-ci-multi-runner rsync && \
     apt-get clean && \
     apt-get autoremove -y
 
